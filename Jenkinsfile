@@ -3,16 +3,11 @@ pipeline {
 
 stages {
 
-stage('build') {
+stage('git-checkout') {
   steps {
-         echo "building----"
+        git 'https://github.com/ashok0503/maven-war-project1.git'
              }
             }
 
-stage('test') {
-  steps {
-         echo "testing-----"
-             }
-                     }
 }
 }
